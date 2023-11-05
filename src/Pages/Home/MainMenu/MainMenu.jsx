@@ -6,7 +6,7 @@ const MainMenu = () => {
   const [menues, setMenues] = useState([])
 
   useEffect(() => {
-    fetch('gazela.json')
+    fetch('http://localhost:5000/mainmenu')
       .then(res => res.json())
       .then(data => setMenues(data))
 
