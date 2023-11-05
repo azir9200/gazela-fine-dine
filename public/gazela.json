@@ -1,40 +1,44 @@
-{
-  "menu": [
-    {
-      "foodName": "Bacalhau à Brás",
-      "image": "https://example.com/images/bacalhau_a_bras.jpg",
-      "foodCategory": "Fish Dishes",
-      "price": 15.99
-    },
-    {
-      "foodName": "Pastéis de Nata",
-      "image": "https://example.com/images/pasteis_de_nata.jpg",
-      "foodCategory": "Desserts",
-      "price": 3.99
-    },
-    {
-      "foodName": "Cozido à Portuguesa",
-      "image": "https://example.com/images/cozido_a_portuguesa.jpg",
-      "foodCategory": "Meat Dishes",
-      "price": 18.99
-    },
-    {
-      "foodName": "Sardinhas Assadas",
-      "image": "https://example.com/images/sardinhas_assadas.jpg",
-      "foodCategory": "Fish Dishes",
-      "price": 12.99
-    },
-    {
-      "foodName": "Feijoada",
-      "image": "https://example.com/images/feijoada.jpg",
-      "foodCategory": "Vegetarian Dishes",
-      "price": 14.99
-    },
-    {
-      "foodName": "Caldo Verde",
-      "image": "https://example.com/images/caldo_verde.jpg",
-      "foodCategory": "Starters",
-      "price": 6.99
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "foodName": "Feijoada",
+    "image": "https://i.imgur.com/fUcZ846.png",
+    "foodCategory": "Starter",
+    "price": 15.99
+  },
+  {
+    "id": "2",
+    "foodName": "Cozido à Portuguesa",
+    "image": "https://i.imgur.com/GNNYwAx.png",
+    "foodCategory": "Main Dishes",
+    "price": 18.99
+  },
+  {
+    "id": "3",
+    "foodName": "Desserts and Sweets",
+    "image": "https://i.imgur.com/SVbCQtJ.png",
+    "foodCategory": "Desserts",
+    "price": 6.99
+  },
+  {
+    "id": "4",
+    "foodName": "Sardinhas Assadas",
+    "image": "https://i.imgur.com/vshUjII.png",
+    "foodCategory": "Fish Dishes",
+    "price": 12.99
+  },
+  {
+    "id": "5",
+    "foodName": "Salada Fresca",
+    "image": "https://i.imgur.com/r0VeSJO.png",
+    "foodCategory": "Vegetarian Dishes",
+    "price": 14.99
+  },
+  {
+    "id": "6",
+    "foodName": "Stake de vaca",
+    "image": "https://i.imgur.com/y3BnOZt.png",
+    "foodCategory": "Meat Dishes",
+    "price": 3.99
+  }
+]
