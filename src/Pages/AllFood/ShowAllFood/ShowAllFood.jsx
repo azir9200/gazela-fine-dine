@@ -1,22 +1,18 @@
 
 
 const ShowAllFood = ({ allDish }) => {
-  const { food_name, food_image, price, food_origin, food_category } = allDish;
+  const { food_name, food_image, price, description, food_origin, food_category } = allDish;
 
   return (
 
-    <div className="card card-side bg-base-100 shadow-xl">
-      <figure><img src={food_image} alt="Movie" /></figure>
+    <div className="card card-side rounded-md bg-base-100 shadow-xl">
+      <img className="w-56" src={food_image} alt="Movie" />
       <div className="card-body">
-        <h2 className="card-title">  {food_name} </h2>
-        <p>{food_category} </p>
-        <p> {food_origin} </p>
-        <p>{price} </p>
-
-
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Watch</button>
-        </div>
+        <h2 className="text-3xl font-bold">  {food_name} </h2>
+        <p className="text-xl italic font-semibold " >About Dish: {description} </p>
+        <p className="text-2xl italic" > Food Origin :  {food_origin} </p>
+        <p className="text-2xl italic " > Dish Price : {price} </p>
+        <button className="bg-sky-100 py-2 text-2xl rounded-md">Buy Food</button>
       </div>
     </div>
 
