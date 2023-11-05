@@ -1,0 +1,543 @@
+[
+  {
+    "food_name": "Steak au Poivre",
+    "food_image": "https://i.ibb.co/Smcgk7h/3a49fff38b5066190773305a68dbba297eeaa6f8.jpg",
+    "food_category": "Meat",
+    "price": 29.99,
+    "made_by": "Chef Philippe",
+    "food_origin": "France",
+    "description": "Tender steak with a creamy peppercorn sauce.",
+    "ingredients": [
+      "Beef steak",
+      "Cream",
+      "Black peppercorns",
+      "Butter"
+    ]
+  },
+  {
+    "food_name": "BBQ Ribs",
+    "food_image": "https://i.ibb.co/ScxNPK1/Best-Food-in-Portugal-Black-Pork.jpg",
+    "food_category": "Meat",
+    "price": 19.99,
+    "made_by": "Chef Mike",
+    "food_origin": "USA",
+    "description": "Fall-off-the-bone ribs with smoky barbecue sauce.",
+    "ingredients": [
+      "Pork ribs",
+      "BBQ sauce",
+      "Spices"
+    ]
+  },
+  {
+    "food_name": "Lamb Tagine",
+    "food_image": "https://i.ibb.co/0XmypGD/232f0e9417751786fa6fe5116ddb94e6.jpg",
+    "food_category": "Meat",
+    "price": 22.99,
+    "made_by": "Chef Fatima",
+    "food_origin": "Morocco",
+    "description": "Slow-cooked lamb with aromatic spices and dried fruits.",
+    "ingredients": [
+      "Lamb",
+      "Cumin",
+      "Cinnamon",
+      "Apricots",
+      "Almonds"
+    ]
+  },
+  {
+    "food_name": "Beef Steak",
+    "food_image": "https://i.ibb.co/MSndj1Y/meat.png",
+    "food_category": "Meat",
+    "price": 16.99,
+    "made_by": "Chef Antonio",
+    "food_origin": "Italy",
+    "description": "Beef cutlets in a Marsala wine sauce with mushrooms.",
+    "ingredients": [
+      "Chicken",
+      "Marsala wine",
+      "Mushrooms",
+      "Flour"
+    ]
+  },
+  {
+    "food_name": "Beef Stroganoff",
+    "food_image": "https://i.ibb.co/4Ys92V7/feathers-of-black-pork.jpg",
+    "food_category": "Meat",
+    "price": 18.99,
+    "made_by": "Chef Elena",
+    "food_origin": "Russia",
+    "description": "Tender beef strips in a creamy mushroom sauce.",
+    "ingredients": [
+      "Beef",
+      "Mushrooms",
+      "Sour cream",
+      "Onions"
+    ]
+  },
+  {
+    "food_name": "Pork Schnitzel",
+    "food_image": "https://i.ibb.co/CwpDvBk/pork-spare-ribs-oven-honey-mustard-360x240.jpg",
+    "food_category": "Meat",
+    "price": 14.99,
+    "made_by": "Chef Klaus",
+    "food_origin": "Germany",
+    "description": "Breaded and fried pork cutlet with lemon wedges.",
+    "ingredients": [
+      "Pork cutlet",
+      "Breadcrumbs",
+      "Lemon"
+    ]
+  },
+  {
+    "food_name": "Grilled Sardins",
+    "food_image": "https://i.ibb.co/KwKMPhX/1024px-grilled-sardines-5-50-marisqueira-o-varino-nazar-3785526688.jpg",
+    "food_category": "Fish",
+    "price": 24.99,
+    "made_by": "Chef Sarah",
+    "food_origin": "USA",
+    "description": "Fresh salmon fillet grilled to perfection with lemon and herbs.",
+    "ingredients": [
+      "Salmon fillet",
+      "Lemon",
+      "Herbs",
+      "Olive oil"
+    ]
+  },
+  {
+    "food_name": "Shrimp Scampi",
+    "food_image": "https://i.ibb.co/xsrTy0Q/food-lisbon-dinner-restaurants-portugal-scaled.jpg",
+    "food_category": "Fish",
+    "price": 21.99,
+    "made_by": "Chef Luca",
+    "food_origin": "Italy",
+    "description": "Jumbo shrimp sautéed in garlic, butter, and white wine sauce.",
+    "ingredients": [
+      "Jumbo shrimp",
+      "Garlic",
+      "Butter",
+      "White wine"
+    ]
+  },
+  {
+    "food_name": "Exquisitas Tataki",
+    "food_image": "https://i.ibb.co/rHH6pT7/exquisitas.jpg",
+    "food_category": "Fish",
+    "price": 26.99,
+    "made_by": "Chef Hiroshi",
+    "food_origin": "Japan",
+    "description": "Seared tuna slices with soy sauce, ginger, and wasabi.",
+    "ingredients": [
+      "Tuna slices",
+      "Soy sauce",
+      "Ginger",
+      "Wasabi"
+    ]
+  },
+  {
+    "food_name": "Fish and Chips",
+    "food_image": "https://i.ibb.co/1QNC5Bn/fishchips.png",
+    "food_category": "Fish",
+    "price": 16.99,
+    "made_by": "Chef John",
+    "food_origin": "UK",
+    "description": "Crispy battered fish with seasoned fries and tartar sauce.",
+    "ingredients": [
+      "Fish fillet",
+      "Batter",
+      "Fries",
+      "Tartar sauce"
+    ]
+  },
+  {
+    "food_name": "Miso Glazed Octopus",
+    "food_image": "https://i.ibb.co/BL4f2cP/Octopus-a-lagareiro-1216.jpg",
+    "food_category": "Fish",
+    "price": 23.99,
+    "made_by": "Chef Yuki",
+    "food_origin": "Japan",
+    "description": "Cod fillet marinated in miso glaze and broiled to perfection.",
+    "ingredients": [
+      "Cod fillet",
+      "Miso paste",
+      "Sake",
+      "Mirin"
+    ]
+  },
+  {
+    "food_name": "Ceviche",
+    "food_image": "https://i.ibb.co/txzKvGL/oven-baked-dourada.jpg",
+    "food_category": "Fish",
+    "price": 19.99,
+    "made_by": "Chef Maria",
+    "food_origin": "Peru",
+    "description": "Fresh seafood marinated in citrus juices with onions and cilantro.",
+    "ingredients": [
+      "Shrimp",
+      "Fish",
+      "Lime juice",
+      "Onions",
+      "Cilantro"
+    ]
+  },
+  {
+    "food_name": "Vegetable Stir-Fry",
+    "food_image": "https://i.ibb.co/smKmTYh/Fruit-Spinach-Salad-EXPS-SDAS18-43601-C03-27-2b.jpg",
+    "food_category": "Vegetable",
+    "price": 14.99,
+    "made_by": "Chef Li",
+    "food_origin": "China",
+    "description": "Assorted vegetables stir-fried in a savory sauce.",
+    "ingredients": [
+      "Broccoli",
+      "Bell peppers",
+      "Carrots",
+      "Soy sauce",
+      "Ginger"
+    ]
+  },
+  {
+    "food_name": "Spinach and Feta Stuffed Peppers",
+    "food_image": "https://i.ibb.co/7kVVpZ8/opt-aboutcom-coeus-resources-content-migration-serious-eats-seriouseats-com-images-2016-05-20160526.jpg",
+    "food_category": "Vegetable",
+    "price": 16.99,
+    "made_by": "Chef Maria",
+    "food_origin": "Greece",
+    "description": "Bell peppers filled with spinach and feta cheese.",
+    "ingredients": [
+      "Bell peppers",
+      "Spinach",
+      "Feta cheese",
+      "Onions"
+    ]
+  },
+  {
+    "food_name": "Spiced-Chickpea-Salad",
+    "food_image": "https://i.ibb.co/khZd3vS/Moroccan-Spiced-Chickpea-Salad-600x744.jpg",
+    "food_category": "Vegetable",
+    "price": 17.99,
+    "made_by": "Chef Luigi",
+    "food_origin": "Italy",
+    "description": "Creamy risotto with sautéed mushrooms and Parmesan cheese.",
+    "ingredients": [
+      "Arborio rice",
+      "Mushrooms",
+      "Parmesan cheese",
+      "White wine"
+    ]
+  },
+  {
+    "food_name": "Eggplant Parmesan",
+    "food_image": "https://i.ibb.co/XW8Gd7X/sfs-salad-with-crispy-spiced-chickpeas-and-honey-mustard-vinaigrette-019.jpg",
+    "food_category": "Vegetable",
+    "price": 15.99,
+    "made_by": "Chef Isabella",
+    "food_origin": "Italy",
+    "description": "Sliced and breaded eggplant with marinara sauce and mozzarella.",
+    "ingredients": [
+      "Eggplant",
+      "Marinara sauce",
+      "Mozzarella cheese",
+      "Breadcrumbs"
+    ]
+  },
+  {
+    "food_name": "Quinoa Salad",
+    "food_image": "https://i.ibb.co/Ny4P18j/Vegetarian-Recipe-for-Beginners-Recipe-Card-500x375.jpg",
+    "food_category": "Vegetable",
+    "price": 12.99,
+    "made_by": "Chef Sarah",
+    "food_origin": "Peru",
+    "description": "A healthy salad with quinoa, mixed vegetables, and vinaigrette.",
+    "ingredients": [
+      "Quinoa",
+      "Cucumbers",
+      "Cherry tomatoes",
+      "Lemon vinaigrette"
+    ]
+  },
+  {
+    "food_name": "Vegetable Curry",
+    "food_image": "https://i.ibb.co/kQQqMrt/curryveg.png",
+    "food_category": "Vegetable",
+    "price": 13.99,
+    "made_by": "Chef Raj",
+    "food_origin": "India",
+    "description": "Assorted vegetables in a fragrant and spicy curry sauce.",
+    "ingredients": [
+      "Mixed vegetables",
+      "Curry spices",
+      "Coconut milk",
+      "Basmati rice"
+    ]
+  },
+  {
+    "food_name": "chocolate-mousse",
+    "food_image": "https://i.ibb.co/6HLXWQc/chocolate-mousse-01.jpg",
+    "food_category": "Dessert",
+    "price": 7.99,
+    "made_by": "Chef Maria",
+    "food_origin": "Italy",
+    "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+    "ingredients": [
+      "Ladyfingers",
+      "Mascarpone cheese",
+      "Espresso",
+      "Cocoa powder"
+    ]
+  },
+  {
+    "food_name": "Chocolate Fondue",
+    "food_image": "https://i.ibb.co/GcRxV6W/brigadeiro-cake-02.jpg",
+    "food_category": "Dessert",
+    "price": 12.99,
+    "made_by": "Chef Emma",
+    "food_origin": "Switzerland",
+    "description": "Assorted fruits and marshmallows served with a rich, melted chocolate fondue.",
+    "ingredients": [
+      "Chocolate",
+      "Strawberries",
+      "Bananas",
+      "Marshmallows"
+    ]
+  },
+  {
+    "food_name": "Custard-Cream-Pin",
+    "food_image": "https://i.ibb.co/wwF80kZ/Egg-Tart-and-Custard-Cream-Pin-683x1024.png",
+    "food_category": "Dessert",
+    "price": 8.99,
+    "made_by": "Chef Sarah",
+    "food_origin": "United States",
+    "description": "Creamy New York-style cheesecake with a graham cracker crust.",
+    "ingredients": [
+      "Cream cheese",
+      "Graham crackers",
+      "Sour cream",
+      "Vanilla"
+    ]
+  },
+  {
+    "food_name": "Palmier",
+    "food_image": "https://i.ibb.co/8PLxSpf/Palmier.jpg",
+    "food_category": "Dessert",
+    "price": 6.99,
+    "made_by": "Chef Giovanni",
+    "food_origin": "Italy",
+    "description": "Smooth and creamy Italian dessert with a caramel drizzle.",
+    "ingredients": [
+      "Heavy cream",
+      "Sugar",
+      "Vanilla",
+      "Gelatin"
+    ]
+  },
+  {
+    "food_name": "Fruit Tart",
+    "food_image": "https://i.ibb.co/BV3c0bJ/portuguese-desserts-folar-de-pascoa-jpg.webp",
+    "food_category": "Dessert",
+    "price": 9.99,
+    "made_by": "Chef Isabelle",
+    "food_origin": "France",
+    "description": "Buttery tart shell filled with pastry cream and topped with fresh seasonal fruits.",
+    "ingredients": [
+      "Pastry cream",
+      "Shortcrust pastry",
+      "Berries",
+      "Kiwi"
+    ]
+  },
+  {
+    "food_name": "Molten Lava Cake",
+    "food_image": "https://i.ibb.co/12QLTh3/portuguese-salame-de-chocolate-3.jpg",
+    "food_category": "Dessert",
+    "price": 7.99,
+    "made_by": "Chef Carlos",
+    "food_origin": "United States",
+    "description": "Warm chocolate cake with a gooey, molten chocolate center, served with vanilla ice cream.",
+    "ingredients": [
+      "Chocolate",
+      "Butter",
+      "Eggs",
+      "Vanilla ice cream"
+    ]
+  },
+  {
+    "food_name": "Caldo Verde",
+    "food_image": "https://i.ibb.co/wc8VFVP/2023-D094-WOMENOFPIT-PORK-1-768x960.jpg",
+    "food_category": "Starter",
+    "price": 6.99,
+    "made_by": "Chef Ana",
+    "food_origin": "Portugal",
+    "description": "Traditional Portuguese green soup with kale and sausage.",
+    "ingredients": [
+      "Potatoes",
+      "Kale",
+      "Chouriço sausage",
+      "Olive oil"
+    ]
+  },
+  {
+    "food_name": "Bacalhau à Brás",
+    "food_image": "https://i.ibb.co/SBmNxxp/2023-D150-MARKMCCABE-BASC-768x960.jpg",
+    "food_category": "Starter",
+    "price": 11.99,
+    "made_by": "Chef Miguel",
+    "food_origin": "Portugal",
+    "description": "Salted codfish with eggs, potatoes, and olives.",
+    "ingredients": [
+      "Salted codfish",
+      "Potatoes",
+      "Eggs",
+      "Olives"
+    ]
+  },
+  {
+    "food_name": "Grilled-eggplant-parm",
+    "food_image": "https://i.ibb.co/qN3cvb5/HD-201304-r-grilled-eggplant-parm-58635a7e82de4bc0ba96381458ffde44.jpg",
+    "food_category": "Starter",
+    "price": 10.99,
+    "made_by": "Chef José",
+    "food_origin": "Portugal",
+    "description": "Grilled prawns marinated in spicy Piri-Piri sauce.",
+    "ingredients": [
+      "Prawns",
+      "Piri-Piri sauce",
+      "Lemon",
+      "Garlic"
+    ]
+  },
+  {
+    "food_name": "Tomato-Cover",
+    "food_image": "https://i.ibb.co/qphFDrP/Tomato-Cover-V2.jpg",
+    "food_category": "Starter",
+    "price": 9.99,
+    "made_by": "Chef Sofia",
+    "food_origin": "Portugal",
+    "description": "Clams in a garlic and cilantro sauce with white wine.",
+    "ingredients": [
+      "Clams",
+      "Garlic",
+      "Cilantro",
+      "White wine"
+    ]
+  },
+  {
+    "food_name": "Queijo Fresco com Mel",
+    "food_image": "https://i.ibb.co/PQRnz5J/white-bean-crostini-768x960.jpg",
+    "food_category": "Starter",
+    "price": 8.99,
+    "made_by": "Chef Ricardo",
+    "food_origin": "Portugal",
+    "description": "Fresh Portuguese cheese with honey and walnuts.",
+    "ingredients": [
+      "Queijo fresco",
+      "Honey",
+      "Walnuts"
+    ]
+  },
+  {
+    "food_name": "Pasteis de Bacalhau",
+    "food_image": "https://i.ibb.co/pPpXYPy/Screenshot-20231104-181057-Maps.jpg",
+    "food_category": "Starter",
+    "price": 7.99,
+    "made_by": "Chef Maria",
+    "food_origin": "Portugal",
+    "description": "Salt codfish fritters served with a dipping sauce.",
+    "ingredients": [
+      "Salted codfish",
+      "Potatoes",
+      "Onions",
+      "Parsley"
+    ]
+  },
+  {
+    "food_name": "Bacalhau à Brás",
+    "food_image": "https://i.ibb.co/g91kDw0/Screenshot-20231104-181036-Maps.jpg",
+    "food_category": "Main",
+    "price": 25.99,
+    "made_by": "Chef Ana",
+    "food_origin": "Portugal",
+    "description": "Salted cod with scrambled eggs, onions, and shoestring potatoes.",
+    "ingredients": [
+      "Salted cod",
+      "Eggs",
+      "Onions",
+      "Potatoes",
+      "Olive oil"
+    ]
+  },
+  {
+    "food_name": "Francesinha",
+    "food_image": "https://i.ibb.co/ftTDk1r/Screenshot-20231104-180856-Maps.jpg",
+    "food_category": "Main",
+    "price": 14.99,
+    "made_by": "Chef Manuel",
+    "food_origin": "Portugal",
+    "description": "Spicy sandwich with layers of cured meats, steak, and a beer-based sauce.",
+    "ingredients": [
+      "Steak",
+      "Sausages",
+      "Ham",
+      "Cheese",
+      "Beer sauce"
+    ]
+  },
+  {
+    "food_name": "Arroz de Pato",
+    "food_image": "https://i.ibb.co/WVS52Cc/Screenshot-20231104-180821-Maps-1.jpg",
+    "food_category": "Main",
+    "price": 28.99,
+    "made_by": "Chef Luisa",
+    "food_origin": "Portugal",
+    "description": "Duck rice casserole with a crispy crust.",
+    "ingredients": [
+      "Duck",
+      "Rice",
+      "Chouriço",
+      "Olives"
+    ]
+  },
+  {
+    "food_name": "Feijoada",
+    "food_image": "https://i.ibb.co/CK7mNV2/Screenshot-20231104-181205-Maps.jpg",
+    "food_category": "Main",
+    "price": 17.99,
+    "made_by": "Chef José",
+    "food_origin": "Portugal",
+    "description": "Hearty pork and bean stew with spices.",
+    "ingredients": [
+      "Pork",
+      "Black beans",
+      "Sausages",
+      "Spices"
+    ]
+  },
+  {
+    "food_name": "Cataplana de Marisco",
+    "food_image": "https://i.ibb.co/hf4Zq8s/Screenshot-20231104-181146-Maps.jpg",
+    "food_category": "Main",
+    "price": 32.99,
+    "made_by": "Chef Isabella",
+    "food_origin": "Portugal",
+    "description": "Seafood medley with tomatoes and spices, cooked in a cataplana pot.",
+    "ingredients": [
+      "Shrimp",
+      "Clams",
+      "Tomatoes",
+      "Paprika"
+    ]
+  },
+  {
+    "food_name": "Ameijoas à Bulhão Pato",
+    "food_image": "https://i.ibb.co/N6Sf9nc/Screenshot-20231104-181120-Maps.jpg",
+    "food_category": "Main",
+    "price": 19.99,
+    "made_by": "Chef Manuel",
+    "food_origin": "Portugal",
+    "description": "Clams cooked in a garlic and cilantro sauce.",
+    "ingredients": [
+      "Clams",
+      "Garlic",
+      "Cilantro"
+    ]
+  }
+]
