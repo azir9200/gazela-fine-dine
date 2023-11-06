@@ -26,12 +26,14 @@ const Header = () => {
           </div>
           <div className=" lg:flex ml-8  gap-8 justify-center items-center   ">
             <div>
-              <Link to="/" >
+              <Link to="/allFood" >
                 <img src="https://i.ibb.co/QpBb1JV/gazela.png" className="w-20 h-20 rounded-xl " alt="" />
               </Link>
             </div>
             <div className="">
-              <p className="text-2xl hidden font-bold text-sky-500 lg:flex " >Gazela Fine Dine</p>
+              <Link to="/allFood" >
+                <p className="text-2xl hidden font-bold text-sky-500 lg:flex " >Gazela Fine Dine</p>
+              </Link>
             </div>
           </div>
         </div>

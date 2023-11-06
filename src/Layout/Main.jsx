@@ -6,7 +6,7 @@ import Footer from "../Pages/SharedPages/Footer/Footer";
 const Main = () => {
   return (
     <div>
-      <h1 className="text-red-700">Main layout</h1>
+
       <Header></Header>
       <Outlet></Outlet>
       <Footer></Footer>
