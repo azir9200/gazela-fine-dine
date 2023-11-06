@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
+import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 
 
 const Register = () => {
@@ -13,19 +14,18 @@ const Register = () => {
     const form = event.target;
     const name = form.name.value;
     const email = form.email.value;
-    const photo = form.photo.value;
+    // const photoUrl = form.photo.value;
     const password = form.password.value;
-    console.log(name, email, photo, password)
+    console.log(name, email, password)
 
     createUser(email, password)
       .then(result => {
         const user = result.user;
         console.log(user);
       })
-      .then(error => {
+      .catch(error => {
         console.error(error);
       })
-
   }
   return (
     <div>
@@ -85,7 +85,16 @@ const Register = () => {
               <button className="btn btn-primary">Reegister</button>
             </div>
           </form>
-          <p className='my-4 text-center'>Already have an Account <Link className='text-orange-600 font-bold' to="/login">Login</Link> </p>
+
+
+
+          <div className="flex justify-center items-center gap-6" >
+            <p className='mb-4 text-center'>Already have an Account click <Link className='text-orange-600 text-xl ml-2 font-bold' to="/login">Login</Link> <span className="ml-4"> OR</span> </p>
+            <a className="link link-hover text-2xl"><FaFacebook></FaFacebook>  </a>
+            <a className="link link-hover text-2xl"><FaGoogle></FaGoogle>  </a>
+            <a className="link link-hover text-2xl"><FaGithub></FaGithub></a></div>
+
+
         </div>
       </div>
     </div>

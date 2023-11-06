@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 
 
 const Login = () => {
@@ -18,7 +19,7 @@ const Login = () => {
         const user = result.user;
         console.log(user);
       })
-      .then(error => console.log(error));
+      .catch(error => console.log(error));
   }
   return (
     <div>
@@ -46,7 +47,14 @@ const Login = () => {
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
-          <p className='my-4 text-center'>Do not have account yet ?  <Link className='text-orange-600 font-bold' to="/register">Sign Up</Link> </p>
+
+          <div className="flex justify-center items-center gap-6" >
+            <p className='mb-4 text-center'>Do not have a account yet ?  click <Link className='text-orange-600 text-xl ml-2 font-bold' to="/register">Register</Link> <span className="ml-4"> OR</span> </p>
+            <a className="link link-hover text-2xl"><FaFacebook></FaFacebook>  </a>
+            <a className="link link-hover text-2xl"><FaGoogle></FaGoogle>  </a>
+            <a className="link link-hover text-2xl"><FaGithub></FaGithub></a></div>
+
+
         </div>
       </div>
     </div>
