@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Login/Register/Register";
 import ShowMenu from "../Pages/Components/ShowMenu/ShowMenu";
 import OrderInfo from "../Pages/Components/OrderInfo/OrderInfo";
+import ErrorPage from "../Pages/Components/ErrorPage/ErrorPage";
 
 
 
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -44,7 +46,19 @@ const router = createBrowserRouter([
         element: <ShowMenu></ShowMenu>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/allDishes/${params.id}`)
-      }
+      },
+      {
+        path: "allFood/showmenu/:id",
+        element: <OrderInfo></OrderInfo>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/allDishes/${params.id}`)
+      },
+
+      // {
+      //   path: 'book/:id', 
+      //   element: <PrivateRoute><BookService></BookService></PrivateRoute>, 
+      //   loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+      // },
     ]
   },
 ]);
