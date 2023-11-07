@@ -5,6 +5,9 @@ import Blogs from "../Pages/Blogs/Blogs";
 import AllFood from "../Pages/AllFood/AllFood";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Login/Register/Register";
+import ShowMenu from "../Pages/Components/ShowMenu/ShowMenu";
+import OrderInfo from "../Pages/Components/OrderInfo/OrderInfo";
+
 
 
 const router = createBrowserRouter([
@@ -29,8 +32,18 @@ const router = createBrowserRouter([
         element: <Login></Login>
       },
       {
+        path: '/orderInfo',
+        element: <OrderInfo></OrderInfo>
+      },
+      {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: "/showmenu/:id",
+        element: <ShowMenu></ShowMenu>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/allDishes/${params.id}`)
       }
     ]
   },

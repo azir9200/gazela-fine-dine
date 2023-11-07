@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
 
 const MainMenuCard = ({ menu }) => {
 
-  const { foodName, image, foodCategory, price } = menu;
+  const { foodName, _id, image, foodCategory, price } = menu;
 
 
 
@@ -14,9 +15,12 @@ const MainMenuCard = ({ menu }) => {
         <div className="flex justify-between " >
           <div className="ml-6" >
             <p className="font-semibold text-2xl" >{foodCategory}</p>
-            <p className="text-2xl" >Price: {price} </p>
+            <p className="text-xl" >Price: {price} </p>
           </div>
-          <button className="bg=sky-200 mr-6 text-xl">See More</button>
+          {/* <Link to={`/foodCategory/${food_category}`} > */}
+          <Link to={`/foodCategory/${_id}`} >
+            <button className="bg-sky-300 rounded-s-2xl mr-6 font-semibold text-2xl">See More</button>
+          </Link>
         </div>
       </div>
     </div>

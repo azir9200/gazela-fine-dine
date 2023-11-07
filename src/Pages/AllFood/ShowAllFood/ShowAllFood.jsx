@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const ShowAllFood = ({ allDish }) => {
-  const { food_name, food_image, price, description, food_origin, food_category } = allDish;
+  const { food_name, food_image, price, description, _id, food_origin } = allDish;
 
   return (
 
@@ -12,7 +13,10 @@ const ShowAllFood = ({ allDish }) => {
         <p className="text-xl italic font-semibold " >About Dish: {description} </p>
         <p className="text-2xl italic" > Food Origin :  {food_origin} </p>
         <p className="text-2xl italic " > Dish Price : {price} </p>
-        <button className="bg-sky-100 py-2 text-2xl rounded-md">Buy Food</button>
+
+        <Link to={`/showmenu/${_id}`} >
+          <button className="bg-sky-100 py-2 text-2xl rounded-md">Buy Meal</button>
+        </Link>
       </div>
     </div>
 
