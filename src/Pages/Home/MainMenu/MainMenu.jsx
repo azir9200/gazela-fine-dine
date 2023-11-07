@@ -6,7 +6,7 @@ const MainMenu = () => {
   const [menues, setMenues] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:5000/mainmenu')
+    fetch('http://localhost:5000/getTopItem')
       .then(res => res.json())
       .then(data => setMenues(data))
 
