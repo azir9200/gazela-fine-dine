@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import SweetAlert2 from "react-sweetalert2";
 
 
 const Login = () => {
@@ -18,6 +19,9 @@ const Login = () => {
       .then(result => {
         const user = result.user;
         console.log(user);
+        if (user) {
+          SweetAlert2('User Login Successful')
+        }
       })
       .catch(error => console.log(error));
   }

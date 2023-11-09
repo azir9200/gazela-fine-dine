@@ -2,34 +2,69 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import SweetAlert2 from "react-sweetalert2";
+
 
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  // const [passwordError, setPasswordError] = useState("");
+  // console.log(passwordError);
 
 
-  const handleRegister = event => {
+  const handleRegister = e => {
 
-    event.preventDefault();
-    const form = event.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    // const photoUrl = form.photo.value;
-    const password = form.password.value;
-    console.log(name, email, password)
+    e.preventDefault();
 
-    createUser(email, password)
-      .then(result => {
-        const user = result.user;
+    const form = e.target;
+    const userEmail = form.email.value;
+    const userName = form.name.value;
+    const userPassword = form.password.value;
+    const userPhotoUrl = form.photoUrl.value;
+    const newUser = { userEmail, userPassword, userName, userPhotoUrl, userCart: [] };
+    console.log(userEmail, userName, userPassword);
+    // const userDetails = {
+    //   userName: name,
+    //   userEmail: email,
+    //   userPhoto: photoUrl,   // }
+
+
+    createUser(userEmail, userPassword)
+      .then((userCredential) => {
+        const user = userCredential.user;
         console.log(user);
+        fetch('http://localhost:5000/foodUsers', {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(newUser),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            // navigate(location?.state ? location.state : "/");
+          });
       })
-      .catch(error => {
-        console.error(error);
-      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
   }
+
   return (
     <div>
       <div className="hero min-h-screen bg-sky-200">
+
+
+        {/* if (data.insertedId) {
+      SweetAlert2.fire({
+        title: 'Success !',
+        text: 'User Login SUCCESSFUL !',
+        icon: 'success',
+        confirmButtonText: 'Welcome'
+      }) */}
 
         <div className="card flex-shrink-0 w-full max-w-xl shadow-2xl bg-base-100">
           <h1 className="text-5xl font-bold">Please Register Here</h1>
@@ -77,7 +112,7 @@ const Register = () => {
               <input
                 type="text"
                 name="photoUrl"
-                placeholder="Photo URL"
+                placeholder="PhotoUrl"
                 className="input input-bordered"
               />
             </div>

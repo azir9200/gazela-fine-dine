@@ -7,6 +7,7 @@ const ShowMenu = () => {
 
 
   const handleBuyMeal = () => {
+
     axios.get(`http://localhost:5000/mealSale?id=${_id}`)
   }
 
@@ -28,7 +29,7 @@ const ShowMenu = () => {
 
           <p className="text-2xl italic " > Dish Price : {price} </p>
 
-          <Link to={`/book/${_id}`}>
+          <Link to={`/orderInfo/${_id}`} >
             <button onClick={handleBuyMeal} className="bg-sky-300 py-2 px-8 text-2xl rounded-md">Confirm Order</button>
           </Link>
         </div>

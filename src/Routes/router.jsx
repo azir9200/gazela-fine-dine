@@ -8,6 +8,8 @@ import Register from "../Pages/Login/Register/Register";
 import ShowMenu from "../Pages/Components/ShowMenu/ShowMenu";
 import OrderInfo from "../Pages/Components/OrderInfo/OrderInfo";
 import ErrorPage from "../Pages/Components/ErrorPage/ErrorPage";
+import AllOrder from "../Pages/Components/AllOrder/AllOrder";
+// import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -48,17 +50,16 @@ const router = createBrowserRouter([
           fetch(`http://localhost:5000/allDishes/${params.id}`)
       },
       {
-        path: "allFood/showmenu/:id",
+        path: 'orderInfo/:id',
         element: <OrderInfo></OrderInfo>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/allDishes/${params.id}`)
       },
+      {
+        path: '/allOrder',
+        element: <AllOrder></AllOrder>
+      }
 
-      // {
-      //   path: 'book/:id', 
-      //   element: <PrivateRoute><BookService></BookService></PrivateRoute>, 
-      //   loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
-      // },
     ]
   },
 ]);
