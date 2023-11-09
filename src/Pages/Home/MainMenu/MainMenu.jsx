@@ -6,7 +6,7 @@ const MainMenu = () => {
   const [menues, setMenues] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:5000/getTopItem')
+    fetch('https://y-4bwgrg4eq-azir-uddins-projects.vercel.app/getTopItem')
       .then(res => res.json())
       .then(data => setMenues(data))
 

@@ -6,7 +6,7 @@ const AllFood = () => {
   const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/allDishes")
+    fetch("https://y-4bwgrg4eq-azir-uddins-projects.vercel.app/allDishes")
       .then((res) => res.json())
       .then((data) => setAllDishes(data));
   }, []);

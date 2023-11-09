@@ -25,7 +25,7 @@ const OrderInfo = () => {
       date,
     };
 
-    fetch("http://localhost:5000/mealOrder", {
+    fetch("https://y-4bwgrg4eq-azir-uddins-projects.vercel.app/mealOrder", {
       method: "POST",
       headers: {
         "content-type": "application/json",

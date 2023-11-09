@@ -6,9 +6,9 @@ const AllOrder = () => {
   const { user } = useContext(AuthContext);
   const [allOrder, setAllOrder] = useState([]);
 
-  // const url = `http://localhost:5000/mealOrder?email=${user.email}`;
+  // const url = `https://y-4bwgrg4eq-azir-uddins-projects.vercel.app/mealOrder?email=${user.email}`;
   useEffect(() => {
-    fetch(`http://localhost:5000/mealOrder?email=${user.email}`)
+    fetch(`https://y-4bwgrg4eq-azir-uddins-projects.vercel.app/mealOrder?email=${user.email}`)
       .then(res => res.json())
       .then(data => console.log(data))
   }, [])

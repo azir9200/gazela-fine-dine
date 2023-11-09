@@ -16,7 +16,7 @@ const ShowMenu = () => {
   } = useLoaderData();
 
   const handleBuyMeal = () => {
-    axios.get(`http://localhost:5000/mealSale?id=${_id}`);
+    axios.get(`https://y-4bwgrg4eq-azir-uddins-projects.vercel.app/mealSale?id=${_id}`);
   };
 
   return (

@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         path: "allFood/showmenu/:id",
         element: <ShowMenu></ShowMenu>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/allDishes/${params.id}`),
+          fetch(`https://y-4bwgrg4eq-azir-uddins-projects.vercel.app/allDishes/${params.id}`),
       },
       {
         path: "orderInfo/:id",
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/allDishes/${params.id}`),
+          fetch(`https://y-4bwgrg4eq-azir-uddins-projects.vercel.app/allDishes/${params.id}`),
       },
       {
         path: "/allOrder",
