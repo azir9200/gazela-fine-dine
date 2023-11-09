@@ -14,19 +14,19 @@ const MainMenu = () => {
 
 
   return (
-
     <div className="mt-6">
       <div className="text-center">
-        <h2 className="text-4xl font-semibold bg-zinc-100" >Taste Your Best Meal From Our Restaurent.  </h2>
-
+        <h2 className="text-4xl font-semibold my-16 bg-zinc-100">
+          Taste Your Best Meal From Our Restaurent.{" "}
+        </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-4 gap-6" >
-        {
-          menues.map(menu => <MainMenuCard
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-4 gap-6">
+        {menues.map((menu) => (
+          <MainMenuCard
             key={menu.id}
             menu={menu}
-          ></MainMenuCard>)
-        }
+          ></MainMenuCard>
+        ))}
       </div>
     </div>
   );

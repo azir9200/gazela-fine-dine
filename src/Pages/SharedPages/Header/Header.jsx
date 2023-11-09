@@ -22,7 +22,7 @@ const Header = () => {
       <div className="dropdown dropdown-end">
         <label tabIndex={0} className="btn m-1">
           <div className="w-10 rounded-full">
-            <img src={user.photo} />
+            <img src={user.photoURL} className="rounded-full" />
           </div>
 
         </label>

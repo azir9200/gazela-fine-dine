@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
-import SweetAlert2 from "react-sweetalert2";
+
 
 
 
@@ -58,13 +58,7 @@ const Register = () => {
       <div className="hero min-h-screen bg-sky-200">
 
 
-        {/* if (data.insertedId) {
-      SweetAlert2.fire({
-        title: 'Success !',
-        text: 'User Login SUCCESSFUL !',
-        icon: 'success',
-        confirmButtonText: 'Welcome'
-      }) */}
+     
 
         <div className="card flex-shrink-0 w-full max-w-xl shadow-2xl bg-base-100">
           <h1 className="text-5xl font-bold">Please Register Here</h1>

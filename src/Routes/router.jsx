@@ -9,6 +9,7 @@ import ShowMenu from "../Pages/Components/ShowMenu/ShowMenu";
 import OrderInfo from "../Pages/Components/OrderInfo/OrderInfo";
 import ErrorPage from "../Pages/Components/ErrorPage/ErrorPage";
 import AllOrder from "../Pages/Components/AllOrder/AllOrder";
+import PrivateRoute from "./PrivateRoute";
 // import PrivateRoute from "./PrivateRoute";
 
 
@@ -20,47 +21,54 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
-        path: '/',
-        element: <Home></Home>
+        path: "/",
+        element: <Home></Home>,
       },
       {
-        path: '/allFood',
-        element: <AllFood></AllFood>
+        path: "/allFood",
+        element: <AllFood></AllFood>,
       },
       {
-        path: '/blogs',
-        element: <Blogs></Blogs>
+        path: "/blogs",
+        element: <Blogs></Blogs>,
       },
       {
-        path: '/login',
-        element: <Login></Login>
+        path: "/login",
+        element: <Login></Login>,
       },
       {
-        path: '/orderInfo',
-        element: <OrderInfo></OrderInfo>
+        path: "/orderInfo",
+        element: (
+          <PrivateRoute>
+            <OrderInfo></OrderInfo>
+          </PrivateRoute>
+        ),
       },
       {
-        path: '/register',
-        element: <Register></Register>
+        path: "/register",
+        element: <Register></Register>,
       },
       {
         path: "allFood/showmenu/:id",
         element: <ShowMenu></ShowMenu>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/allDishes/${params.id}`)
+          fetch(`http://localhost:5000/allDishes/${params.id}`),
       },
       {
-        path: 'orderInfo/:id',
-        element: <OrderInfo></OrderInfo>,
+        path: "orderInfo/:id",
+        element: (
+          <PrivateRoute>
+            <OrderInfo></OrderInfo>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/allDishes/${params.id}`)
+          fetch(`http://localhost:5000/allDishes/${params.id}`),
       },
       {
-        path: '/allOrder',
-        element: <AllOrder></AllOrder>
-      }
-
-    ]
+        path: "/allOrder",
+        element: <AllOrder></AllOrder>,
+      },
+    ],
   },
 ]);
 
