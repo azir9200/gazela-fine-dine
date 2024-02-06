@@ -57,9 +57,7 @@ const router = createBrowserRouter([
       {
         path: "orderInfo/:id",
         element: (
-          <PrivateRoute>
-            <OrderInfo></OrderInfo>
-          </PrivateRoute>
+          <PrivateRoute><OrderInfo></OrderInfo> </PrivateRoute>
         ),
         loader: ({ params }) =>
           fetch(`https://y-4bwgrg4eq-azir-uddins-projects.vercel.app/allDishes/${params.id}`),
